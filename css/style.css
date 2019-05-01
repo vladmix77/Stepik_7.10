@@ -1,0 +1,222 @@
+body { 
+  font-size: Roboto, sans-serif;
+  margin: 0;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  width: 100%;
+  clear: both;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #007765; 
+  height: 84px;
+  position: fixed;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.container {
+  width: 1219px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.logo { 
+  color: #fff;
+  margin-top: 20px; 
+}
+
+nav {
+  float: right;
+  margin-top: 28px; 
+  line-height: normal;
+  text-align: center;
+
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.menu li {
+  float: left;
+  display: block;
+  margin-right: 10px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  
+  font-size: 24px;
+}
+
+
+/* ------------- services ----------------- */
+
+.titles-first {
+  font-size: 72px;
+  color: #fff;
+  
+  text-align: center;
+  margin-top: 160px;
+}
+
+#services {
+  background-image: url(/img/Jumbotron.jpg);
+  background-size: cover;
+  height: 403px;
+  border: 1px solid red;
+}
+
+/* ------------- problem ----------------- */
+
+#problem {
+  background: #EEEEEE;
+  height: 719px;
+  border: 1px solid red;
+}
+
+/* ---------- сдвиг относительно шапки --- */ 
+
+#problem:target, #ppc:target, #team:target {
+  padding-top: 84px;
+}
+
+h2 {
+  font-size: 64px;
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 0;
+  color: #007765;
+  border: 1px solid red; 
+}
+
+p {
+  font-size: 32px;
+  border: 1px solid red; 
+}
+
+span {
+  font-weight: bold;
+}
+
+/* -------------- hero ----------------- */
+
+#hero {
+  background-image: url(/img/hero.jpg);
+  background-size: cover;
+  height: 483px;
+
+}
+
+.titles-hero {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 128px;
+  font-style: italic;
+  color: #fff; 
+  border: 1px solid red;
+
+}
+
+/* ---------------- ppc ---------------- */
+
+#ppc {
+  font-size: 64px;
+  height: 604px;
+  font-weight: 500;
+  text-align: center;
+  background: #fff;
+  border: 1px solid red;
+}
+
+.ppc-logo {
+  float: left;
+  color: #007765;
+  border: 1px solid red;
+}
+
+.ppc-text {
+  font-size: 32px;
+  margin: 0 auto;  
+  margin-left: 163px;
+  text-align: left;
+  border: 1px solid red;
+}
+
+.ppc-text1 {
+  font-size: 32px;
+  margin-top: 10px;  
+  text-align: left;
+  border: 1px solid red;
+}
+
+/* ---------------- team -------------------- */
+
+#team {
+  
+  height: 845px;
+  background: #eee;
+  border: 1px solid red;
+}
+
+figure {
+  display: inline-block;
+  width: 350px;
+  height: 283px;
+  
+  text-align: center;
+  padding-top: 24px;
+  border: 1px solid red;
+  margin: 25px;
+}
+
+figcaption {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007765;
+  border: 1px solid red;
+}
+
+figcaption + p {
+  margin: 0 auto;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: normal;
+}
+
+/* --------------- footer ---------------------- */
+
+footer {
+  background: #333;
+  height: 173px;
+  border: 1px solid red;
+}
+
+.footer-all {
+  width: 540px;
+  height: 64px;
+  margin: 50px auto;
+  text-align: center;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: normal;
+
+  color: #FFFFFF;
+  
+  border: 1px solid red;
+}
+
