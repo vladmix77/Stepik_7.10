@@ -80,6 +80,8 @@ nav {
 #services {
   background-image: url(../img/Jumbotron.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;   
   min-height: 403px;
   border: 1px solid red;
 }
@@ -126,6 +128,8 @@ span {
 #hero {
   background-image: url(../img/hero.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding-bottom: 127px;
 
 }
