@@ -74,12 +74,13 @@ nav {
           /* ---------- проблемма разметки title *-------- */
   text-align: center;
   margin-top: 160px;
+  padding-bottom: 60px;
 }
 
 #services {
   background-image: url(../img/Jumbotron.jpg);
   background-size: cover;
-  height: 403px;
+  min-height: 403px;
   border: 1px solid red;
 }
 
@@ -241,7 +242,7 @@ footer {
       width: 70%;
   }
   .title {
-    text-align:center;
+      text-align:center;
   }
 }
 /* --- Если меньше 768px то... --- */
@@ -249,17 +250,32 @@ footer {
   .container {
       width: 80%;
   }
+  /* --- Перевот стоки в блок --- */
+  .figure {
+      box-sizing: border-box;
+  }
 }
 /* --- Если меньше 567px то... --- */
 @media (max-width: 567px) {
-  
+  .ppc-text {
+      display: inline-block;
+      margin: 0 auto;
+  }
 }
 /* --- Если меньше 480px то... --- */ 
 @media (max-width: 480px) {
-.container {
-  min-width: 480px;
-}
-#ppc h2 {
-  font-size: 48px;
-}
+  .container {
+      min-width: 320px;
+  }
+/* --- Перенос длинных слов не ломая блоки --- */ 
+#ppc, h2, p, .titles-first, .titles-hero {
+      overflow-wrap: break-word;
+  }
+.logo {
+      display: none;
+  }
+figure { 
+      width: 150px;
+      height: 50px;
+  }
 }
