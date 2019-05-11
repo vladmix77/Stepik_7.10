@@ -278,6 +278,9 @@ footer {
 .logo {
       display: none;
   }
+  .menu li a {
+    font-size: 18px;
+  }
 .ppc-logo {
   float: none;
   } 
