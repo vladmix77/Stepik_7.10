@@ -278,6 +278,9 @@ footer {
 .logo {
       display: none;
   }
+.ppc-logo {
+  float: none;
+  } 
 figure { 
       width: 150px;
       height: 50px;
