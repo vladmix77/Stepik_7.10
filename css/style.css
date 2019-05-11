@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto'); /* --- Подключение шрифта --- */
 
 body { 
-  font-size: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
