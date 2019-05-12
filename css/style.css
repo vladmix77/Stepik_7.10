@@ -272,20 +272,20 @@ footer {
   .container {
       min-width: 320px;
   }
+  .logo {
+    display: none;
+  }
 /* --- Перенос длинных слов не ломая блоки --- */ 
 #ppc, h2, p, .titles-first, .titles-hero {
       overflow-wrap: break-word;
   }
-.logo {
-      display: none;
-  }
   .menu li a {
-    font-size: 18px;
+      font-size: 16px;
   }
-.ppc-logo {
-  float: none;
+  .ppc-logo {
+      float: none;
   } 
-figure { 
+  figure { 
       width: 150px;
       height: 50px;
   }
