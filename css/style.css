@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto'); /* --- Подключение шрифта --- */
+@import url("https://fonts.googleapis.com/css?family=Roboto"); /* --- Подключение шрифта --- */
 
-body { 
-  font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
   margin: 0;
 }
 
 .clearfix:after {
-  content: '';
+  content: "";
   display: table;
   width: 100%;
   clear: both;
@@ -18,10 +18,10 @@ div {
 
 img {
   max-width: 100%;
-  }
+}
 
 header {
-  background-color: #007765; 
+  background-color: #007765;
   padding-bottom: 19px;
   position: fixed;
   width: 100%;
@@ -34,17 +34,16 @@ header {
   border: 1px solid red;
 }
 
-.logo { 
+.logo {
   color: #fff;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 nav {
   float: right;
-  margin-top: 28px; 
+  margin-top: 28px;
   line-height: normal;
   text-align: center;
-
 }
 
 .menu {
@@ -62,17 +61,15 @@ nav {
 .menu li a {
   color: #fff;
   text-decoration: none;
-  
   font-size: 24px;
 }
-
 
 /* ------------- services ----------------- */
 
 .titles-first {
   font-size: 72px;
   color: #fff;
-          /* ---------- проблемма разметки title *-------- */
+  /* ---------- проблемма разметки title *-------- */
   text-align: center;
   margin-top: 160px;
   padding-bottom: 60px;
@@ -82,7 +79,7 @@ nav {
   background-image: url(../img/Jumbotron.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;   
+  background-position: center;
   min-height: 403px;
   border: 1px solid red;
 }
@@ -90,14 +87,16 @@ nav {
 /* ------------- problem ----------------- */
 
 #problem {
-  background: #EEEEEE;
+  background: #eeeeee;
   padding-bottom: 92px;
   border: 1px solid red;
 }
 
-/* ---------- сдвиг относительно шапки --- */ 
+/* --- сдвиг относительно шапки --- */
 
-#problem:target, #ppc:target, #team:target {
+#problem:target,
+#ppc:target,
+#team:target {
   padding-top: 84px;
 }
 
@@ -107,17 +106,17 @@ h2 {
   margin-top: 48px;
   margin-bottom: 0;
   color: #007765;
-  border: 1px solid red; 
+  border: 1px solid red;
 }
 
 .ppc-h2 {
   margin-bottom: 10px;
-  border: 1px solid blue; 
+  border: 1px solid blue;
 }
 
 p {
   font-size: 32px;
-  border: 1px solid red; 
+  border: 1px solid red;
 }
 
 span {
@@ -132,7 +131,6 @@ span {
   background-repeat: no-repeat;
   background-position: center;
   padding-bottom: 127px;
-
 }
 
 .titles-hero {
@@ -140,9 +138,8 @@ span {
   text-align: center;
   margin-top: 128px;
   font-style: italic;
-  color: #fff; 
+  color: #fff;
   border: 1px solid red;
-
 }
 
 /* ---------------- ppc ---------------- */
@@ -164,7 +161,7 @@ span {
 
 .ppc-text {
   font-size: 32px;
-  margin: 0 auto;  
+  margin: 0 auto;
   margin-left: 163px;
   text-align: left;
   border: 1px solid red;
@@ -172,7 +169,7 @@ span {
 
 .ppc-text1 {
   font-size: 32px;
-  margin-top: 10px;  
+  margin-top: 10px;
   text-align: left;
   border: 1px solid red;
 }
@@ -189,7 +186,6 @@ figure {
   display: inline-block;
   width: 350px;
   height: 200px;
-  
   text-align: center;
   padding-top: 24px;
   border: 1px solid red;
@@ -215,7 +211,7 @@ figcaption p {
 /* --------------- footer ---------------------- */
 
 footer {
-  background: #333; 
+  background: #333;
   border: 1px solid red;
 }
 
@@ -223,81 +219,82 @@ footer {
   min-height: 64px; /* -- мин высота. для растижения текста в сонтейнере -- */
   margin: 50px auto;
   text-align: center;
-
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: normal;
-
-  color: #FFFFFF;
-  
+  color: #ffffff;
   border: 1px solid red;
 }
 
-/* ------ Адаптивная верстка сайта ------ */ 
+/* ------ Адаптивная верстка сайта ------ */
 
 /* --- Если меньше 1024px то... --- */
 @media (max-width: 1024px) {
   .container {
-      width: 90%;
+    width: 90%;
   }
 }
 
 /* --- Если меньше 992px то... --- */
 @media (max-width: 992px) {
   .container {
-      width: 70%;
+    width: 70%;
   }
   .title {
-      text-align:center;
+    text-align: center;
   }
 }
 
 /* --- Если меньше 768px то... --- */
 @media (max-width: 768px) {
   .container {
-      width: 80%;
+    width: 80%;
   }
   /* --- Перевот стоки в блок --- */
   .figure {
-      box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
 
 /* --- Если меньше 567px то... --- */
 @media (max-width: 567px) {
-/* --- Отключение логотипа --- */
+  /* --- Отключение логотипа --- */
   .logo {
-      display: none;
+    display: none;
   }
   .menu li a {
-      font-size: 20px;
+    font-size: 20px;
   }
   .ppc-logo {
-      float: none;
+    float: none;
   }
   .ppc-text {
-      display: inline-block;
-      margin: 0 auto;
-  } 
+    display: inline-block;
+    margin: 0 auto;
+  }
 }
 
-/* --- Если меньше 480px то... --- */ 
+/* --- Если меньше 480px то... --- */
 @media (max-width: 480px) {
   .container {
-      min-width: 320px;
+    min-width: 320px;
   }
-/* --- Перенос длинных слов не ломая блоки --- */ 
-  #ppc, h2, p, .titles-first, .titles-hero {
-      overflow-wrap: break-word;
+  /* --- Перенос длинных слов не ломая блоки --- */
+  #ppc,
+  h2,
+  p,
+  .titles-first,
+  .titles-hero {
+    overflow-wrap: break-word;
   }
 
   .menu li a {
-      font-size: 16px;
+    font-size: 16px;
   }
-/* --- Уменьшение фотографий team --- */
-  figure { 
-      width: 150px;
-      height: 50px;
+  /* --- Уменьшение фотографий team --- */
+  figure {
+    width: 150px;
+    height: 50px;
   }
 }
