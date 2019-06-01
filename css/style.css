@@ -244,6 +244,9 @@ footer {
   .title {
     text-align: center;
   }
+  .logo {
+    display: none;
+  }
 }
 
 /* --- Если меньше 768px то... --- */
@@ -260,9 +263,7 @@ footer {
 /* --- Если меньше 567px то... --- */
 @media (max-width: 567px) {
   /* --- Отключение логотипа --- */
-  .logo {
-    display: none;
-  }
+  
   .menu li a {
     font-size: 20px;
   }
