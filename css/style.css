@@ -20,18 +20,19 @@ img {
   max-width: 100%;
 }
 
+/*--- header ---*/
+
 header {
   background-color: #007765;
   padding-bottom: 19px;
   position: fixed;
   width: 100%;
-  border: 1px solid red;
 }
 
 .container {
   max-width: 1219px;
   margin: 0 auto;
-  border: 1px solid red;
+  border1: 1px solid #fff;
 }
 
 .logo {
@@ -71,25 +72,27 @@ nav {
   color: #fff;
   /* ---------- проблемма разметки title *-------- */
   text-align: center;
-  margin-top: 160px;
-  padding-bottom: 60px;
+  padding-top: 244px;
+  padding-bottom: 160px;
+ 
 }
 
 #services {
+
   background-image: url(../img/Jumbotron.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 403px;
-  border: 1px solid red;
+  
 }
 
 /* ------------- problem ----------------- */
 
 #problem {
+  margin: 0 auto;
+  padding-top: 48px;
+  padding-bottom: 144px;
   background: #eeeeee;
-  padding-bottom: 92px;
-  border: 1px solid red;
 }
 
 /* --- сдвиг относительно шапки --- */
@@ -103,20 +106,16 @@ nav {
 h2 {
   font-size: 64px;
   text-align: center;
-  margin-top: 48px;
-  margin-bottom: 0;
+  margin: 0;
   color: #007765;
-  border: 1px solid red;
 }
 
 .ppc-h2 {
   margin-bottom: 10px;
-  border: 1px solid blue;
 }
 
 p {
-  font-size: 32px;
-  border: 1px solid red;
+  font-size: 32px; 
 }
 
 span {
@@ -136,27 +135,28 @@ span {
 .titles-hero {
   font-size: 48px;
   text-align: center;
-  margin-top: 128px;
+  padding-top: 128px;
   font-style: italic;
   color: #fff;
-  border: 1px solid red;
+ 
 }
 
 /* ---------------- ppc ---------------- */
 
 #ppc {
   font-size: 64px;
+  padding-top: 48px;
   padding-bottom: 92px;
   font-weight: 500;
   text-align: center;
   background: #fff;
-  border: 1px solid red;
+
 }
 
 .ppc-logo {
   float: left;
   color: #007765;
-  border: 1px solid red;
+ 
 }
 
 .ppc-text {
@@ -164,21 +164,21 @@ span {
   margin: 0 auto;
   margin-left: 163px;
   text-align: left;
-  border: 1px solid red;
+ 
 }
 
 .ppc-text1 {
   font-size: 32px;
   margin-top: 10px;
   text-align: left;
-  border: 1px solid red;
+ 
 }
 
 /* ---------------- team -------------------- */
 
 #team {
   background: #eee;
-  border: 1px solid red;
+  padding-top: 58px;
   padding-bottom: 122px;
 }
 
@@ -188,7 +188,6 @@ figure {
   height: 200px;
   text-align: center;
   padding-top: 24px;
-  border: 1px solid red;
   margin: 25px;
 }
 
@@ -196,7 +195,6 @@ figcaption {
   font-size: 24px;
   font-weight: bold;
   color: #007765;
-  border: 1px solid red;
 }
 
 figcaption p {
@@ -212,19 +210,18 @@ figcaption p {
 
 footer {
   background: #333;
-  border: 1px solid red;
 }
 
 .footer-all {
+  padding-top: 50px;
+  padding-bottom: 62px;
   min-height: 64px; /* -- мин высота. для растижения текста в сонтейнере -- */
-  margin: 50px auto;
   text-align: center;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: normal;
   color: #ffffff;
-  border: 1px solid red;
 }
 
 /* ------ Адаптивная верстка сайта ------ */
