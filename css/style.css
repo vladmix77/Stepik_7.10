@@ -25,7 +25,6 @@ img {
 header {
   background-color: #007765;
   top: 0;
-  
   height: 84px;
   width: 100%;
   position: fixed;
@@ -67,13 +66,14 @@ nav {
 }
 
 /* ------------- services ----------------- */
+
 #services {
   background-image: url(../img/Jumbotron.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 84px;
   min-height: 406px;
-  margin-top: 84px;
 }
 .titles-first {
   font-size: 72px;
@@ -83,11 +83,17 @@ nav {
   padding-bottom: 160px;
 }
 
-/* --- сдвиг относительно шапки --- */
+/* --- сдвиг относительно шапки (проблема якорей) --- */
+
+#services:target,
 #problem:target,
 #ppc:target,
 #team:target {
-  padding-top: 84px;
+  border-top: 84px solid transparent;
+  margin-top: -84px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 
 /* ------------- problem ----------------- */
