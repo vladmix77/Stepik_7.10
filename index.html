@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Домашнее задание Pied Piper</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -145,5 +146,28 @@
         </div>
       </div>
     </footer>
+    <script>
+      $(function () {
+        $('a[href^="#"]').on('click', function (event) {
+          // отменяем стандартное действие
+          event.preventDefault();
+
+          var sc = $(this).attr("href"),
+            dn = $(sc).offset().top;
+          /*
+           * sc - в переменную заносим информацию о том, к какому блоку надо перейти
+           * dn - определяем положение блока на странице
+           */
+
+          $('html, body').animate({
+            scrollTop: dn - 84
+          }, 1000);
+
+          /*
+           * 1000 скорость перехода в миллисекундах
+           */
+        });
+      });
+    </script>
   </body>
 </html>
