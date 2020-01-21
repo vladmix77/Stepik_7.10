@@ -275,9 +275,9 @@ footer {
 
 /* --- Если меньше 480px то... --- */
 @media (max-width: 480px) {
-  .container {
+ .container {
     min-width: 320px;
-  }
+  } 
   /* --- Перенос длинных слов не ломая блоки --- */
   #ppc,
   h2,
@@ -290,3 +290,32 @@ footer {
     font-size: 16px;
   }
 }
+
+  @media (max-width: 375px) {
+.container {
+  width: 90%;
+}
+.menu li a {
+  font-size: 14px;
+  padding-right: 5px;
+}
+p {
+  font-size: 28px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.titles-hero {
+  font-size: 42px;
+}
+h2 {
+  font-size: 42px;
+}
+.ppc-logo {
+  padding: 15px 0;
+}
+.ppc-text,
+.ppc-text1 {
+  font-size: 26px;
+  text-align: center;
+}
+  }
